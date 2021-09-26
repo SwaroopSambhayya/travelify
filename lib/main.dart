@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       darkTheme: MyTheme.darkTheme,
       theme: MyTheme.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: PlaceDetails(),
+      home: Onboarding(),
     );
   }
 }

@@ -142,7 +142,7 @@ class _HomeState extends State<Home> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 4,
                       itemBuilder: (context, index) {
-                        return TravelCard();
+                        return TravelCard(index: index.toString());
                       }),
                 )
               ],

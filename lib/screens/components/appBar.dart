@@ -48,7 +48,7 @@ class MyAppBar extends PreferredSize {
                         },
                         child: Icon(
                           Icons.chevron_left,
-                          color: Theme.of(context).primaryColor,
+                          color: Colors.white,
                           size: 30,
                         ),
                       )
@@ -82,7 +82,10 @@ class MyAppBar extends PreferredSize {
               children: [
                 autoImplyLeading
                     ? IconButton(
-                        icon: Icon(IconlyBold.heart),
+                        icon: Icon(
+                          IconlyBold.heart,
+                          color: Colors.white,
+                        ),
                         color: Theme.of(context).primaryColor,
                         onPressed: () {},
                       )
