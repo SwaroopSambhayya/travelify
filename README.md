@@ -1,6 +1,7 @@
 # travelify
 
-A new Flutter project.
+A travel app UI built in Flutter.
+![Travel App UI](https://github.com/SwaroopSambhayya/travelify/blob/master/travelify.png)
 
 ## Getting Started
 
