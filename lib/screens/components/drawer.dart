@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inner_drawer/inner_drawer.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:travelify/screens/onboarding.dart';
 import 'package:travelify/theme.dart';
 
 class MyDrawer extends StatefulWidget {
@@ -175,6 +176,12 @@ class _MyDrawerState extends State<MyDrawer> {
                             SharedPreferences pref =
                                 await SharedPreferences.getInstance();
                             pref.setBool("isLoggedIn", false);
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Onboarding(),
+                              ),
+                            );
                           },
                           title: Row(
                             children: [
